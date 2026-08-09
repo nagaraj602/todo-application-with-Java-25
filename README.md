@@ -25,7 +25,7 @@ Task Master Pro is a task management application built using Java. It provides a
 
 ### Prerequisites
 
-- Java Development Kit (JDK) 17 or later
+- Java Development Kit (JDK) 25 or later
 - Apache Maven 3.6.0 or later
 - A database (H2)
 
