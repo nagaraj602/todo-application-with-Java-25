@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: taskmaster
-          image: adijaiswal/prodtaskmaster:latest # Image that will be used to containers in the cluster
+          image: nagarajkamath602/todo-application-with-java-25:latest # Image that will be used to containers in the cluster
           imagePullPolicy: Always
           ports:
             - containerPort: 3004 # The port that the container is running on in the cluster
