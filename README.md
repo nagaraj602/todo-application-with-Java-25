@@ -1,6 +1,6 @@
 # Task Master Pro Testing 
 
-Welcome to Task Master Pro, a comprehensive Java application designed to manage tasks efficiently. This project is developed and maintained by Zubair.
+Welcome to Task Master Pro, a comprehensive Java application designed to manage tasks efficiently. This project is developed and maintained by Nagaraj.
 
 ## Table of Contents
 - [Introduction](#introduction)
@@ -84,6 +84,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Contact
 
-For any questions or inquiries, please reach out to us at [artisenzubair on GitHub](https://github.com/artisenzubair)
+For any questions or inquiries, please reach out to us at [Nagaraj on GitHub](https://github.com/nagaraj602)
 
 Happy coding!
