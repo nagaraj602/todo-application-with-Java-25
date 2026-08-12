@@ -60,8 +60,7 @@ pipeline {
                         kubectl config set-context eks-context --cluster=my-eks --user=jenkins-sa --namespace=${K8S_NAMESPACE}
                         kubectl config use-context eks-context
                         
-                        # 3. Apply manifests
-                        kubectl apply -f k8s/rbac.yaml
+                        # 3. Apply manifests                        
                         kubectl apply -f k8s/deployment-service.yaml
                         
                         # 4. Verify deployment
