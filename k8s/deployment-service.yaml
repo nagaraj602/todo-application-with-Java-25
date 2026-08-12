@@ -1,0 +1,42 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: taskmaster-deployment
+  namespace: webapps
+spec:
+  selector:
+    matchLabels:
+      app: taskmaster
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: taskmaster
+    spec:
+      containers:
+        - name: taskmaster
+          image: IMAGE_PLACEHOLDER
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 3004
+          resources:
+            requests:
+              memory: "256Mi"
+              cpu: "250m"
+            limits:
+              memory: "512Mi"
+              cpu: "500m"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: taskmaster-ssvc
+  namespace: webapps
+spec:
+  selector:
+    app: taskmaster
+  ports:
+    - protocol: "TCP"
+      port: 80
+      targetPort: 3004 
+  type: LoadBalancer
