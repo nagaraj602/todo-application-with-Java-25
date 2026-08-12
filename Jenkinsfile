@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         AWS_REGION       = 'us-east-1' // Change to your AWS Region
-        ECR_REGISTRY     = '544917027663.dkr.ecr.us-east-1.amazonaws.com'
+        ECR_REGISTRY     = '334673530017.dkr.ecr.us-east-1.amazonaws.com'
         ECR_REPO         = 'todo-app'
         IMAGE_TAG        = "v${env.BUILD_NUMBER}"
         APP_NAME         = 'todo-application'
